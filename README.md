@@ -26,7 +26,6 @@ $ npm run generate
     *  <a href="#static">static</a>
     *  <a href="store">store</a>
     *  <a href="#nuxt.config.js">nuxt.config.js</a>
-    *  <a href="#package.json">package.json</a>
 *  <a href="#預設">預設</a>
 *  <a href="#預設">預設</a>
 
@@ -46,6 +45,10 @@ $ npm run generate
 ### pages
 *  The pages directory contains your Application Views and Routes. The framework reads all the .vue files inside this directory and creates the application router.
 *  此路徑名稱不可修改
+*  這 route 跟 vue cli 不同，是直接創建 .vue 檔案，然後 nuxt 會自行幫你創建 route
+*  index.vue 比較特殊，會對應到 "/" route，其他都是直接檔案名稱直接對應
+*  ex: /pages/index.vue => "localhost:3000"，/pages/user/index.vue => "localhost:3000/user"
+*  ex: /pages/about.vue => "localhost:3000/about"，/pages/user/about.vue => "localhost:3000/user/about"
 ### static
 *  The static directory is directly mapped to the server root (/static/robots.txt is accessible under http://localhost:3000/robots.txt) and contains files that likely won't be changed (e.g. the favicon)
 *  Example: /static/robots.txt is mapped as /robots.txt
