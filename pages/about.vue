@@ -1,5 +1,5 @@
 <template>
-    <h2>index.vue</h2>
+    <h2>about.vue</h2>
 </template>
 
 <script>

@@ -26,7 +26,7 @@ $ npm run generate
     *  <a href="#static">static</a>
     *  <a href="store">store</a>
     *  <a href="#nuxt.config.js">nuxt.config.js</a>
-*  <a href="#預設">預設</a>
+*  <a href="#eslintrc.js">eslintrc.js</a>
 *  <a href="#預設">預設</a>
 
 ## 檔案目錄結構
@@ -61,3 +61,18 @@ $ npm run generate
 ### nuxt.config.js
 *  The nuxt.config.js file contains your Nuxt.js custom configuration.
 *  此檔案名稱不可修改
+
+## eslintrc.js
+*  我自己修改後的規則
+```
+rules: {
+    'nuxt/no-cjs-in-config': 'off',
+    'vue/html-indent': ['warn', 4],
+    'vue/script-indent': ['warn', 4]
+    'indent': ['warn', 4],
+    'vue/no-trailing-spaces': 'off',
+    'no-trailing-spaces': 'off',
+    'object-shorthand': 'warn',
+    'space-before-function-paren': ['warn', 'always'],
+}
+```
