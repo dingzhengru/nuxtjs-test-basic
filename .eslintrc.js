@@ -21,5 +21,8 @@ module.exports = {
         'no-trailing-spaces': 'off',
         'object-shorthand': 'warn',
         'space-before-function-paren': ['warn', 'always'],
+        'eol-last': ['warn', 'always'],
+        'vue/no-unused-vars': 'warn',
+        'vue/max-attributes-per-line': 'off'
     }
 }
