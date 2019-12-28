@@ -24,7 +24,7 @@ $ npm run generate
     *  <a href="#middleware">middleware</a>
     *  <a href="#pages">pages</a>
     *  <a href="#static">static</a>
-    *  <a href="store">store</a>
+    *  <a href="#store">store</a>
     *  <a href="#nuxt.config.js">nuxt.config.js</a>
 *  <a href="#eslintrc.js">eslintrc.js</a>
 *  <a href="#預設">預設</a>
@@ -58,7 +58,7 @@ $ npm run generate
 *  The store directory contains your Vuex Store files. The Vuex Store comes with Nuxt.js out of the box but is disabled by default. Creating an index.js file in this directory enables the store.
 *  此路徑名稱不可修改
 *  自己的 vuex store
-*  需創建一個 index.js, 除 index.js 以外的 .js 會直接對應名稱
+*  需創建一個 index.js，除 index.js 以外的 .js 會直接對應名稱
 
 **index.js**
 ``` js 
