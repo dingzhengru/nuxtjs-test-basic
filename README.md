@@ -56,8 +56,46 @@ $ npm run generate
 *  放需要被 server 映射的檔案
 ### store
 *  The store directory contains your Vuex Store files. The Vuex Store comes with Nuxt.js out of the box but is disabled by default. Creating an index.js file in this directory enables the store.
-*  自己的 vuex store
 *  此路徑名稱不可修改
+*  自己的 vuex store
+*  需創建一個 index.js, 除 index.js 以外的 .js 會直接對應名稱
+
+**index.js**
+``` js 
+export const state = () => ({
+    counter: 0  // this.store.state.counter
+})
+
+export const getters = {
+    getCounter (state) {
+        return state.counter // this.store.getters.getCounter
+    }
+}
+
+export const mutations = {
+    increment (state) {
+        state.counter++ // this.store.commit('increment')
+    }
+}
+```
+**todos.js**
+``` js
+export const state = () => ({
+    list: [] // this.store.state.todos.list
+})
+
+export const getters = {
+    getList (state) {
+        return state.list // this.store.getters['todos/getList']
+    }
+}
+
+export const mutations = {
+    add (state, todo) {
+        state.list.push(todo) // this.store.commit('todos/add', todo)
+    }
+}
+```
 ### nuxt.config.js
 *  The nuxt.config.js file contains your Nuxt.js custom configuration.
 *  此檔案名稱不可修改
