@@ -6,15 +6,16 @@
 # create nuxt init project
 npx create-nuxt-app <project-name>
 
+# 以下指令都在 package.json scripts 中
 # serve with hot reload at localhost:3000
-$ npm run dev
+npm run dev
 
 # build for production and launch server
-$ npm run build
-$ npm run start
+npm run build
+npm run start
 
 # generate static project
-$ npm run generate
+npm run generate
 ```
 
 *  <a href="#檔案目錄結構">檔案目錄結構</a>
@@ -27,7 +28,6 @@ $ npm run generate
     *  <a href="#store">store</a>
     *  <a href="#nuxt.config.js">nuxt.config.js</a>
 *  <a href="#eslintrc.js">eslintrc.js</a>
-*  <a href="#預設">預設</a>
 
 ## 檔案目錄結構
 *  來自官方教學: https://nuxtjs.org/guide/directory-structure
